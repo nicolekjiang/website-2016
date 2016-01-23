@@ -8,7 +8,7 @@
 }
 
 
-div,p,h2{
+div,p,h2,h3{
 	font-family: 'lato', sans-serif;
 	font-weight: 200;
 }
@@ -22,18 +22,24 @@ body{
 		display: block;
 		width: auto;
 	}
+	.width-wrapper{
+		max-width: 1440px;
+		margin: 0 auto;
+		position: relative;
+		height: inherit;
+	}
 	#section-intro{
 		height: 110vh;
 		margin: auto;
 		.intro-gradient;
 		#white-bg{
 			display: block;
-			width: 34%;
-			min-width: 180px;
-			height: inherit;
-			background: white;
-			text-align: left;
-			margin-left: 0px;
+		    width: 58%;
+		    min-width: 180px;
+		    height: inherit;
+		    background: white;
+		    text-align: left;
+		    margin-left: -24%;
 		}
 		#intro-bg{
 			width: 44%;
@@ -82,7 +88,7 @@ body{
 			}
 			#intro-content-1{
 				font-size: 12px;
-			    letter-spacing: 2.2px;
+			    letter-spacing: 1.2px;
 			    font-weight: 400;
 			    opacity: 1;
 			    line-height: 26px;
@@ -145,7 +151,7 @@ body{
 				margin-top: 35px;
 				width: 18px;
 				height: 18px;
-				opacity: 0.5;
+				opacity: 0.4;
 				cursor: pointer;
 				&:hover{
 					opacity: 1;
@@ -172,8 +178,6 @@ body{
 				background: transparent url('../twitter.svg') center center no-repeat;
 			    background-size: contain;
 			}
-
-
 		}
 		.intro-divider{
 			width: 34px;
@@ -182,14 +186,228 @@ body{
 		    margin: 20px 0px 30px;
 		}
 
-	}//section-intro
-	
-}
+		h3{
+			font-size: 10px;
+		    position: absolute;
+		    bottom: -55px;
+		    font-weight: 600;
+		    letter-spacing: 3px;
+		    transform: rotate(-90deg);
+		    transform-origin: 5px bottom 0;
+		    left: 35%;
+		    margin-top: 0px;
+		    color: white;
+		    opacity: 0.5;	
+		}
 
+	}//section-intro
+	section#section-project{
+		.project-background{
+			width: 34%;
+    		border-right: 1px solid rgba(128, 128, 128, 0.25);
+    		height: 550px;
+		}
+		#project-bg{
+			width: 130px;
+    		margin-top: -80px;
+		}
+		
+		.project-title{
+		    transform: rotate(-90deg);
+		    transform-origin: left bottom 0px;
+		    margin-left: 34.5%;
+		    margin-top: -300px;
+			#title-box{
+				width: 16px;
+			    height: 16px;
+			    background-color: blue;
+			    display: inline-block;
+			}
+			h2{
+				display: inline-block;
+			    margin: 12px 0px;
+			    text-transform: uppercase;
+			    letter-spacing: 6px;
+			    font-weight: 800;
+			    opacity: 0.5;
+			}
+		}		
+		h3{
+			font-weight: 800;
+		    font-size: 140px;
+		    opacity: 0.05;
+		    text-transform: uppercase;
+		    margin-top: -90px;
+		    letter-spacing: 10px;
+		    margin-left: -170px;
+		}
+		.title-description{
+			color: #738CEA;
+			font-weight: 600;
+			letter-spacing: 1.1px;
+			margin-left: 35%;
+			width: 190px;
+			font-size: 12px;
+			margin-top: -47px;
+		}
+	}//section-project
+	section#section-project-1{
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		width: auto;
+		height: 100vh;
+		margin-left: 190px;
+   		margin-top: 330px;	
+   		margin-bottom: 100px;
+		.project-background{
+			position: absolute; 
+			background-color: rgba(119, 147, 234, 0.09);
+			z-index: -10;
+		    width: 760px;
+		    height: 62vh;
+		    left: 40%;    
+		    margin-left: -430px;
+    		margin-top: 0px;
+		}
+		.project-number{
+			    color: #CBF3FF;
+		    position: absolute;
+		    margin-top: -125px;
+		    margin-left: 560px;
+		    font-size: 170px;
+		}
+		.section-paragraph-1{
+			display: block;
+		    position: absolute;
+		    width: 400px;
+		    text-align: right;
+		    margin-top: 310px;
+    		margin-left: 0px;
+			.project-title{
+				text-transform: uppercase;
+			    font-weight: 600;
+			    letter-spacing: 5px;
+			    background: rgba(255, 223, 246, 0.9);
+			    display: inline;
+			    text-align: right;
+			    padding: 27px 0px 0px 20px;
+			    color: white;
+			    font-size: 22px;
+			}
+			.project-title-name{
+				color: #5F68F3;
+			    font-weight: 700;
+			    letter-spacing: 10px;
+			    font-size: 48px;
+			    text-align: right;
+			    display: inline;
+			    text-transform: uppercase;
+			    font-family: 'Raleway', sans-serif;
+			    display: block;
+			    margin-bottom: 10px;
+			    margin-top: 6px;
+			    margin-right: -8px;
+			}
+			.project-divider{
+				width: 34px;
+			    height: 8px;
+			    background: rgba(74, 74, 74, 0.72);
+			    margin: 0px 0px 20px;
+			    right: 0px;
+    			position: absolute;
+			}
+			.project-content{
+				margin-top: 40px;
+			    line-height: 22px;
+			    font-style: italic;
+			    font-weight: 400;
+			    letter-spacing: 1px;
+			    color: rgba(96,96,96,0.9);
+			}
+		}//section-paragraph-1
+		.project-cta{
+			position: absolute;
+		    height: 90px;
+		    width: 90px;
+		    background: rgba(75, 62, 247, 0.93) url('../arrow.svg') center center no-repeat;
+		    background-size: 23px 23px;
+		    margin-left: 739px;
+		    z-index: 80;
+		    margin-top: 295px;
+		}//project-cta
+		.project-work{
+			.project-work-1{
+				    width: 479px;
+			    -webkit-filter: grayscale(100%);
+			    filter: grayscale(100%);
+			    position: absolute;
+			    z-index: 50;
+			    top: 0px;
+			    margin-top: -90px;
+			    margin-left: 120px;
+			    .box-shadow;
+			}
+			.project-work-2{
+				width: 315px;
+			    -webkit-filter: grayscale(100%);
+			    filter: grayscale(100%);
+			    position: absolute;
+			    z-index: 60;
+			    margin-left: 440px;
+			    margin-top: 180px;	
+			    .box-shadow;	
+			}
+			.project-work-3{
+				-webkit-filter: grayscale(100%);
+			    filter: grayscale(100%);
+			    position: absolute;
+			    z-index: 40;
+			    margin-left: 667px;
+			    width: 330px;
+			    margin-top: 75px;
+			    .box-shadow;
+			}
+		}//project-work
+		.project-date{
+			border-top: 1px solid rgba(204, 204, 204, 0.48);
+		    text-transform: uppercase;
+		    color: #758CED;
+		    font-weight: 600;
+		    letter-spacing: 4.5px;
+		    transform: rotate(-90deg);
+		    transform-origin: left bottom 0;
+		    width: 250px;
+		    padding-top: 4px;
+		    font-size: 10px;
+		    text-align: right;
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    margin: 150px -40px 0px -60px;
+		}
+	}
+	
+}//body
+
+.project-number{
+	font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    z-index: 20;
+}
+#blank{
+	height: 500px;
+}
 .clearfix{
 	clear: both;
 }
 
+.box-shadow{
+	-webkit-box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.18);
+	-moz-box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.18);
+	box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.18);
+}
 .intro-gradient{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */
 background: #a2eae1; /* Old browsers */
