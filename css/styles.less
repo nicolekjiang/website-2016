@@ -1,0 +1,201 @@
+@pink : #F5B5EC;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300,100,300italic');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800');
+@font-face {
+  font-family: HelloBeautiful;
+  src: local('HelloBeautiful'), local('HelloBeautiful'), 
+         url(assets/HelloBeautiful.otf) format('opentype');
+}
+
+
+div,p,h2{
+	font-family: 'lato', sans-serif;
+	font-weight: 200;
+}
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+body{
+	margin: 0px;
+	.wrapper{
+		display: block;
+		width: auto;
+	}
+	#section-intro{
+		height: 110vh;
+		margin: auto;
+		.intro-gradient;
+		#white-bg{
+			display: block;
+			width: 34%;
+			min-width: 180px;
+			height: inherit;
+			background: white;
+			text-align: left;
+			margin-left: 0px;
+		}
+		#intro-bg{
+			width: 44%;
+		    height: auto;
+		    display: block;
+		    margin: 0 auto;
+		    padding-top: 190px;
+		    position: absolute;
+		    left: 26.5%;
+		    z-index: 20;
+		}
+		#solid-bg{
+			position: absolute;
+		    z-index: 10;
+		    left: 26%;
+		    margin-top: 120px;
+		    width: 54vw;
+		    height: 550px;
+		    background-color: rgba(256, 256, 256, 0.06);
+		}
+		.section-paragraph-1{
+			display: inline-block;
+		    float: left;
+		    position: absolute;
+		    top: 135px;
+		    margin-left: 80px;
+		    z-index: 30;
+			h1{
+				color: #5F68F3;
+		   	 	font-weight: 700;
+			    text-transform: uppercase;
+			    letter-spacing: 11px;
+			    font-size: 46px;
+			    margin-top: 8px;
+			    margin-bottom: 0px;
+				span{
+					font-family: 'HelloBeautiful';
+				    color: rgba(255, 191, 248, 0.5);
+				    font-size: 180px;
+				    font-weight: normal;
+				    text-transform: none;
+				    letter-spacing: normal;
+				    margin-right: -40px;
+				    vertical-align: -webkit-baseline-middle;
+				}
+			}
+			#intro-content-1{
+				font-size: 12px;
+			    letter-spacing: 2.2px;
+			    font-weight: 400;
+			    opacity: 1;
+			    line-height: 26px;
+			    margin-left: 80px;
+			    margin-top: -60px;
+			    color: #CCCCCC;
+			}
+		}
+		.section-paragraph-2{
+		    display: inline-block;
+		    position: absolute;
+		    width: 20%;
+		    top: 350px;
+		    float: right;
+		    margin-right: 150px;
+		    right: 0;
+		    z-index: 40;
+			#intro-title-2{
+				display: block;
+				position: relative;
+				width: 62px;
+				background: @pink;
+				right: 0px;
+				z-index: 30;
+				color: white;
+				letter-spacing: 6px;
+			    font-size: 12px;
+			    font-weight: 500;
+			    text-align: center;
+			    padding: 23px 0px 23px 3px;
+			    text-transform: uppercase;
+			    font-weight: 600;
+			}
+			#intro-content-2{
+				color: white;
+			    font-style: italic;
+			    z-index: 40;
+			    line-height: 26px;
+			    font-weight: 400;
+			    margin-left: -20px;
+			    letter-spacing: 0.5px;
+			    font-size:16px;
+			}
+		}
+		.section-contact{
+			display: inline-block;
+		    position: absolute;
+		    height: auto;
+		    width: 100px;
+		    float: right;
+		    right: 0px;
+		    top: 0px;
+		    padding-left: 20px;
+		    margin-right: 57px;
+		    margin-top: -10px;
+		    border-left: 1px solid rgba(255, 255, 255, 0.25);
+		    padding-bottom: 10px;
+			li{
+				list-style-type: none;
+				margin-top: 35px;
+				width: 18px;
+				height: 18px;
+				opacity: 0.5;
+				cursor: pointer;
+				&:hover{
+					opacity: 1;
+					cusor: pointer;
+				}
+			}
+			li#dribbble{
+				background: transparent url('../dribbble.svg') center center no-repeat;
+			    background-size: contain;
+			}
+			li#github{
+				background: transparent url('../github.svg') center center no-repeat;
+			    background-size: contain;
+			}
+			li#instagram{
+				background: transparent url('../insta.svg') center center no-repeat;
+			    background-size: contain;
+			}
+			li#linkedin{
+				background: transparent url('../linkedin.svg') center center no-repeat;
+			    background-size: contain;
+			}
+			li#twitter{
+				background: transparent url('../twitter.svg') center center no-repeat;
+			    background-size: contain;
+			}
+
+
+		}
+		.intro-divider{
+			width: 34px;
+		    height: 8px;
+		    background: rgba(74, 74, 74, 0.72);
+		    margin: 20px 0px 30px;
+		}
+
+	}//section-intro
+	
+}
+
+.clearfix{
+	clear: both;
+}
+
+.intro-gradient{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */
+background: #a2eae1; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #a2eae1 0%, #a2eae1 24%, #6c7eeb 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #a2eae1 0%,#a2eae1 24%,#6c7eeb 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #a2eae1 0%,#a2eae1 24%,#6c7eeb 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2eae1', endColorstr='#6c7eeb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
