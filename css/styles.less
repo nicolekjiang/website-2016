@@ -157,9 +157,11 @@ body{
 				height: 18px;
 				opacity: 0.4;
 				cursor: pointer;
+				.transition(0.25s);
 				&:hover{
 					opacity: 1;
 					cusor: pointer;
+					.transition(0.25s);
 				}
 				img{
 					width: 100%;
@@ -263,27 +265,30 @@ body{
 			position: absolute;
 		    height: 90px;
 		    width: 90px;
-		    background: rgba(75, 62, 247, 0.93) url('../arrow.svg') center center no-repeat;
+		    background: rgba(75, 62, 247, 0.9) url('../arrow.svg') center center no-repeat;
 		    background-size: 23px 23px;
 		    z-index: 80;
 		    cursor: pointer;
 		    &:hover{
 		    	background: rgba(75, 62, 247, 1) url('../arrow.svg') center center no-repeat;
 		    	background-size: 23px 23px;
+		    	.transition(0.5s);
 		    }
 		}
 		.project-img{
-			img{
+			& > img{
 			    -webkit-filter: grayscale(100%);
 			    filter: grayscale(100%);
 			    .box-shadow;
+		    	.transition(0.5s);
 			    &:hover{
 			    	-webkit-filter: grayscale(0%);
 			    	filter: grayscale(0%);
 			    	opacity: 1 !important;
-			    	z-index: 100 !important;
+		    		.transition(0.5s);
 			    }
 			}
+
 		}
 		.project-date{
 			border-top: 1px solid rgba(204, 204, 204, 0.48);
@@ -550,8 +555,6 @@ body{
 			    float: right;
 			    margin-left: 50%;
 			    margin-top: 40px;
-			    -webkit-filter: grayscale(10%);
-			    filter: grayscale(10%);
 			    .no-box-shadow;
 			}
 			.project-img-3{
@@ -672,8 +675,6 @@ body{
 		    opacity: 0.4;
 		}
 	}//footer
-
-	
 }//body
 
 .clearfix{
@@ -690,13 +691,13 @@ body{
 	-moz-box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.18);
 	box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.18);
 }
-.fasttransition{
-  -webkit-transition: all 0.25s ease 0s;
-    -moz-transition: all 0.25s ease 0s;
-    -o-transition: all 0.25s ease 0s;
-  -ms-transition: all 0.25s ease 0s;
-    transition: all 0.25s ease 0s;
-} // fasttransition
+.transition(@time){
+  -webkit-transition: all @time ease 0s;
+    -moz-transition: all @time ease 0s;
+    -o-transition: all @time ease 0s;
+  -ms-transition: all @time ease 0s;
+    transition: all @time ease 0s;
+} //transition
 
 
 
