@@ -216,28 +216,28 @@ body #section-intro h3 {
   color: white;
   opacity: 0.5;
 }
-body section#section-project .project-background {
+body section#section-project-0 .project-background {
   width: 34%;
   border-right: 1px solid rgba(128, 128, 128, 0.25);
   height: 550px;
 }
-body section#section-project #project-bg {
+body section#section-project-0 #project-bg {
   width: 130px;
   margin-top: -80px;
 }
-body section#section-project .project-title {
+body section#section-project-0 .project-title {
   transform: rotate(-90deg);
   transform-origin: left bottom 0px;
   margin-left: 34.5%;
   margin-top: -300px;
 }
-body section#section-project .project-title #title-box {
+body section#section-project-0 .project-title #title-box {
   width: 16px;
   height: 16px;
   background-color: blue;
   display: inline-block;
 }
-body section#section-project .project-title h2 {
+body section#section-project-0 .project-title h2 {
   display: inline-block;
   margin: 12px 0px;
   text-transform: uppercase;
@@ -245,7 +245,7 @@ body section#section-project .project-title h2 {
   font-weight: 800;
   opacity: 0.5;
 }
-body section#section-project h3 {
+body section#section-project-0 h3 {
   font-weight: 800;
   font-size: 140px;
   opacity: 0.05;
@@ -254,7 +254,7 @@ body section#section-project h3 {
   letter-spacing: 10px;
   margin-left: -170px;
 }
-body section#section-project .title-description {
+body section#section-project-0 .title-description {
   color: #738CEA;
   font-weight: 600;
   letter-spacing: 1.1px;
@@ -263,20 +263,95 @@ body section#section-project .title-description {
   font-size: 12px;
   margin-top: -47px;
 }
-body section#section-project-1 {
+body section.section-project {
   display: block;
   position: relative;
   margin: 0 auto;
   width: auto;
   height: 100vh;
+}
+body section.section-project .project-background {
+  position: absolute;
+  z-index: -10;
+}
+body section.section-project .project-number {
+  font-size: 100px;
+  font-weight: 800;
+  position: absolute;
+  z-index: 20;
+  font-size: 170px;
+}
+body section.section-project .section-paragraph-1 {
+  display: block;
+  position: absolute;
+}
+body section.section-project .section-paragraph-1 .project-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  display: inline;
+  color: white;
+  background: rgba(255, 223, 246, 0.9);
+  font-size: 22px;
+}
+body section.section-project .section-paragraph-1 .project-title-name {
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+}
+body section.section-project .section-paragraph-1 .project-divider {
+  width: 34px;
+  height: 8px;
+  background: rgba(74, 74, 74, 0.72);
+  margin: 0px 0px 20px;
+}
+body section.section-project .section-paragraph-1 .project-content {
+  line-height: 22px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(96, 96, 96, 0.9);
+}
+body section.section-project .project-cta {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  background: rgba(75, 62, 247, 0.93) url('../arrow.svg') center center no-repeat;
+  background-size: 23px 23px;
+  z-index: 80;
+}
+body section.section-project .project-img img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+}
+body section.section-project .project-date {
+  border-top: 1px solid rgba(204, 204, 204, 0.48);
+  text-transform: uppercase;
+  color: #758CED;
+  font-weight: 600;
+  letter-spacing: 4.5px;
+  transform: rotate(-90deg);
+  transform-origin: left bottom 0;
+  padding-top: 4px;
+  font-size: 10px;
+}
+body section.section-project .project-extension {
+  position: absolute;
+  height: 500px;
+}
+body section#section-project-1 {
   margin-left: 190px;
   margin-top: 330px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 body section#section-project-1 .project-background {
-  position: absolute;
   background-color: rgba(119, 147, 234, 0.09);
-  z-index: -10;
   width: 760px;
   height: 62vh;
   left: 40%;
@@ -285,135 +360,189 @@ body section#section-project-1 .project-background {
 }
 body section#section-project-1 .project-number {
   color: #CBF3FF;
-  position: absolute;
   margin-top: -125px;
   margin-left: 560px;
-  font-size: 170px;
 }
 body section#section-project-1 .section-paragraph-1 {
-  display: block;
-  position: absolute;
   width: 400px;
   text-align: right;
   margin-top: 310px;
   margin-left: 0px;
 }
 body section#section-project-1 .section-paragraph-1 .project-title {
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 5px;
-  background: rgba(255, 223, 246, 0.9);
-  display: inline;
   text-align: right;
   padding: 27px 0px 0px 20px;
-  color: white;
-  font-size: 22px;
 }
 body section#section-project-1 .section-paragraph-1 .project-title-name {
   color: #5F68F3;
-  font-weight: 700;
-  letter-spacing: 10px;
-  font-size: 48px;
   text-align: right;
-  display: inline;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  display: block;
   margin-bottom: 10px;
   margin-top: 6px;
   margin-right: -8px;
 }
 body section#section-project-1 .section-paragraph-1 .project-divider {
-  width: 34px;
-  height: 8px;
-  background: rgba(74, 74, 74, 0.72);
-  margin: 0px 0px 20px;
   right: 0px;
   position: absolute;
 }
 body section#section-project-1 .section-paragraph-1 .project-content {
   margin-top: 40px;
-  line-height: 22px;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: rgba(96, 96, 96, 0.9);
 }
 body section#section-project-1 .project-cta {
-  position: absolute;
-  height: 90px;
-  width: 90px;
-  background: rgba(75, 62, 247, 0.93) url('../arrow.svg') center center no-repeat;
-  background-size: 23px 23px;
   margin-left: 739px;
-  z-index: 80;
   margin-top: 295px;
 }
-body section#section-project-1 .project-work .project-work-1 {
+body section#section-project-1 .project-img .project-img-1 {
   width: 479px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   position: absolute;
   z-index: 50;
   top: 0px;
   margin-top: -90px;
   margin-left: 120px;
-  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
 }
-body section#section-project-1 .project-work .project-work-2 {
+body section#section-project-1 .project-img .project-img-2 {
   width: 315px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   position: absolute;
   z-index: 60;
   margin-left: 440px;
   margin-top: 180px;
-  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
 }
-body section#section-project-1 .project-work .project-work-3 {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+body section#section-project-1 .project-img .project-img-3 {
   position: absolute;
   z-index: 40;
   margin-left: 667px;
   width: 330px;
   margin-top: 75px;
-  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
 }
 body section#section-project-1 .project-date {
-  border-top: 1px solid rgba(204, 204, 204, 0.48);
-  text-transform: uppercase;
-  color: #758CED;
-  font-weight: 600;
-  letter-spacing: 4.5px;
-  transform: rotate(-90deg);
-  transform-origin: left bottom 0;
   width: 250px;
-  padding-top: 4px;
-  font-size: 10px;
   text-align: right;
   position: absolute;
   left: 0;
   top: 0;
   margin: 150px -40px 0px -60px;
 }
-.project-number {
-  font-size: 100px;
-  font-weight: 800;
+body section#section-project-1 .project-extension {
+  width: 40%;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: -300px;
+  border-left: 1px solid rgba(128, 128, 128, 0.25);
+}
+body section#section-project-2 {
+  margin-top: 300px;
+}
+body section#section-project-2 .project-background {
+  background-color: rgba(231, 199, 222, 0.2);
+  width: 74%;
+  height: 70vh;
+  margin-top: -100px;
+}
+body section#section-project-2 .project-number {
+  color: #A4D2EF;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -220px;
+}
+body section#section-project-2 .project-img .project-img-1 {
+  width: 520px;
+  z-index: 20;
+  left: 50%;
+  position: absolute;
+  margin-left: -365px;
+  margin-top: -15px;
+}
+body section#section-project-2 .project-img .project-img-2 {
+  width: auto;
+  z-index: 10;
+  position: absolute;
+  left: 55%;
+  margin-top: -160px;
+}
+body section#section-project-2 .project-img .project-img-3 {
+  z-index: -5;
+  opacity: 0.07;
+  margin-top: 190px;
+}
+body section#section-project-2 .section-paragraph-1 {
+  left: 860px;
+  margin-top: -320px;
+}
+body section#section-project-2 .section-paragraph-1 .project-title {
+  text-align: left;
+  color: #E6A1D2;
+  background: transparent;
+}
+body section#section-project-2 .section-paragraph-1 .project-title-name {
+  color: #5F68F3;
+  margin-top: 10px;
+}
+body section#section-project-2 .section-paragraph-1 .project-divider {
+  margin: 20px 0px 20px;
+}
+body section#section-project-2 .project-cta {
+  left: 50%;
+  margin-left: -365px;
+  margin-top: -219px;
+}
+body section#section-project-2 .project-date {
+  position: absolute;
+  right: 0px;
+  width: 250px;
+  transform: rotate(90deg);
+  transform-origin: 62%;
+  top: -10px;
+}
+body section#section-project-2 .project-extension {
+  left: 50%;
+  margin-left: -277px;
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  margin-top: -130px;
+}
+body section#section-project-3 .project-background {
+  background-color: rgba(195, 220, 222, 0.2);
+  width: 70%;
+  height: 70vh;
+}
+body section#section-project-3 .project-number {
+  color: #E7C7DE;
+}
+body section#section-project-3 .project-img {
+  position: relative;
+  width: auto;
+}
+body section#section-project-3 .project-img .project-img-1 {
+  position: absolute;
+  z-index: 60;
+  width: 250px;
+  left: 50%;
+  margin-left: -125px;
+}
+body section#section-project-3 .project-img .project-img-2 {
   position: absolute;
   z-index: 20;
+  float: right;
+  margin-left: 50%;
+  margin-top: 40px;
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%);
+  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+}
+body section#section-project-3 .section-paragraph-1 .project-title {
+  color: #E6A1D2;
+  background-color: transparent;
 }
 #blank {
   height: 500px;
 }
 .clearfix {
   clear: both;
+}
+.no-box-shadow {
+  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
 }
 .box-shadow {
   -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
