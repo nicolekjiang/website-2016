@@ -157,10 +157,13 @@ body{
 					opacity: 1;
 					cusor: pointer;
 				}
+				img{
+					width: 100%;
+				}
 			}
 			li#dribbble{
-				background: transparent url('../dribbble.svg') center center no-repeat;
-			    background-size: contain;
+				//background: transparent url('../dribbble.svg') center center no-repeat;
+			    //background-size: contain;
 			}
 			li#github{
 				background: transparent url('../github.svg') center center no-repeat;
@@ -199,59 +202,7 @@ body{
 		    color: white;
 		    opacity: 0.5;	
 		}
-
 	}//section-intro
-	section#section-project-0{
-		.project-background{
-			width: 34%;
-    		border-right: 1px solid rgba(128, 128, 128, 0.25);
-    		//height: 550px;
-    		height: 620px;
-    		margin-top: -20px;
-		}
-		#project-bg{
-			width: 130px;
-    		margin-top: -100px;
-		}
-		.project-title{
-		    transform: rotate(-90deg);
-		    transform-origin: left bottom 0px;
-		    margin-left: 34.5%;
-		    margin-top: -340px;
-			#title-box{
-				width: 16px;
-			    height: 16px;
-			    background-color: blue;
-			    display: inline-block;
-			}
-			h2{
-				display: inline-block;
-			    margin: 12px 0px;
-			    text-transform: uppercase;
-			    letter-spacing: 6px;
-			    font-weight: 800;
-			    opacity: 0.5;
-			}
-		}		
-		h3{
-			font-weight: 800;
-		    font-size: 140px;
-		    opacity: 0.05;
-		    text-transform: uppercase;
-		    margin-top: -110px;
-		    letter-spacing: 10px;
-		    margin-left: -170px;
-		}
-		.title-description{
-			color: #738CEA;
-			font-weight: 600;
-			letter-spacing: 1.1px;
-			margin-left: 35%;
-			width: 190px;
-			font-size: 12px;
-			margin-top: -47px;
-		}
-	}//section-project
 
 	section.section-project{
 		display: block;
@@ -311,12 +262,23 @@ body{
 		    background: rgba(75, 62, 247, 0.93) url('../arrow.svg') center center no-repeat;
 		    background-size: 23px 23px;
 		    z-index: 80;
+		    cursor: pointer;
+		    &:hover{
+		    	background: rgba(75, 62, 247, 1) url('../arrow.svg') center center no-repeat;
+		    	background-size: 23px 23px;
+		    }
 		}
 		.project-img{
 			img{
 			    -webkit-filter: grayscale(100%);
 			    filter: grayscale(100%);
 			    .box-shadow;
+			    &:hover{
+			    	-webkit-filter: grayscale(0%);
+			    	filter: grayscale(0%);
+			    	opacity: 1 !important;
+			    	z-index: 100 !important;
+			    }
 			}
 		}
 		.project-date{
@@ -335,6 +297,60 @@ body{
 			height: 500px;
 		}
 	}
+
+	section#section-project-0{
+		.project-background{
+			width: 34%;
+    		border-right: 1px solid rgba(128, 128, 128, 0.25);
+    		//height: 550px;
+    		height: 620px;
+    		margin-top: -20px;
+		}
+		#project-bg{
+			width: 130px;
+    		margin-top: -100px;
+		}
+		.project-title{
+		    transform: rotate(-90deg);
+		    transform-origin: left bottom 0px;
+		    margin-left: 34.5%;
+		    margin-top: -340px;
+			#title-box{
+				width: 16px;
+			    height: 16px;
+			    background-color: blue;
+			    display: inline-block;
+			}
+			h2{
+				display: inline-block;
+			    margin: 12px 0px;
+			    text-transform: uppercase;
+			    letter-spacing: 6px;
+			    font-weight: 800;
+			    opacity: 0.5;
+			}
+		}		
+		h3{
+			font-weight: 800;
+		    font-size: 140px;
+		    opacity: 0.05;
+		    text-transform: uppercase;
+		    margin-top: -110px;
+		    letter-spacing: 10px;
+		    margin-left: -170px;
+		}
+		.title-description{
+			color: #738CEA;
+			font-weight: 600;
+			letter-spacing: 1.1px;
+			margin-left: 35%;
+			width: 190px;
+			font-size: 12px;
+			margin-top: -47px;
+		}
+	}//section-project
+
+
 	section#section-project-1{
 		margin-left: 190px;
    		margin-top: 380px;	
@@ -377,8 +393,7 @@ body{
 			}
 		}//section-paragraph-1
 		.project-cta{
-			
-		    margin-left: 739px;
+		    margin-left: 755px;
 		    margin-top: 295px;
 		}//project-cta
 		.project-img{
@@ -647,9 +662,10 @@ body{
 			}//li
 		}//ul
 		p#footer-note{
-			font-size: 10px;
+			font-size: 12px;
 		    letter-spacing: 0.6px;
 		    margin-top: 120px;
+		    opacity: 0.4;
 		}
 	}//footer
 
