@@ -1,4 +1,5 @@
-@pink : #F5B5EC;
+//imports
+@import "reset.less";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300,100,300italic');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800');
 @font-face {
@@ -6,6 +7,9 @@
   src: local('HelloBeautiful'), local('HelloBeautiful'), 
          url(assets/HelloBeautiful.otf) format('opentype');
 }
+
+//colors
+@pink : #F5B5EC;
 
 
 div,p,h2,h3{
@@ -686,6 +690,16 @@ body{
 	-moz-box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.18);
 	box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.18);
 }
+.fasttransition{
+  -webkit-transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+    transition: all 0.25s ease 0s;
+} // fasttransition
+
+
+
 .intro-gradient{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */
 background: #a2eae1; /* Old browsers */
