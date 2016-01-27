@@ -147,7 +147,7 @@ textarea {
 }
 @font-face {
   font-family: HelloBeautiful;
-  src: local('HelloBeautiful'), local('HelloBeautiful'), url(assets/HelloBeautiful.otf) format('opentype');
+  src: local('HelloBeautiful'), local('HelloBeautiful'), url(HelloBeautiful.otf) format('opentype');
 }
 div,
 p,
@@ -334,22 +334,6 @@ body #section-intro .section-contact li:hover {
 body #section-intro .section-contact li img {
   width: 100%;
 }
-body #section-intro .section-contact li#github {
-  background: transparent url('../github.svg') center center no-repeat;
-  background-size: contain;
-}
-body #section-intro .section-contact li#instagram {
-  background: transparent url('../insta.svg') center center no-repeat;
-  background-size: contain;
-}
-body #section-intro .section-contact li#linkedin {
-  background: transparent url('../linkedin.svg') center center no-repeat;
-  background-size: contain;
-}
-body #section-intro .section-contact li#twitter {
-  background: transparent url('../twitter.svg') center center no-repeat;
-  background-size: contain;
-}
 body #section-intro .intro-divider {
   width: 34px;
   height: 8px;
@@ -359,7 +343,7 @@ body #section-intro .intro-divider {
 body #section-intro h3 {
   font-size: 10px;
   position: absolute;
-  bottom: -55px;
+  bottom: 15px;
   font-weight: 600;
   letter-spacing: 3px;
   transform: rotate(-90deg);
@@ -693,9 +677,9 @@ body section#section-project-3 .project-background {
 body section#section-project-3 .project-number {
   color: #E7C7DE;
   position: absolute;
-  left: 56%;
+  left: 57%;
   z-index: 40;
-  bottom: 0;
+  bottom: 140px;
   opacity: 0.6;
 }
 body section#section-project-3 .project-img {
